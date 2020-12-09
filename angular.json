@@ -124,5 +124,8 @@
       }
     }
   },
-  "defaultProject": "pw"
+  "defaultProject": "pw",
+  "cli": {
+    "analytics": false
+  }
 }

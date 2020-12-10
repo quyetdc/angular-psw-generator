@@ -2,22 +2,22 @@
 
 <div>
   <label>Engter Length</label>
-  <input />
+  <input (input)="onChangeLength($event)"/>
 </div>
 
 <div>
   <label>Use Letters</label>
-  <input type="checkbox" />
+  <input type="checkbox" (change)="onChangeUseLetters()"/>
 </div>
 
 <div>
   <label>Use Numbers</label>
-  <input type="checkbox" />
+  <input type="checkbox" (change)="onChangeUseNumbers()"/>
 </div>
 
 <div>
   <label>User Symbols</label>
-  <input type="checkbox" />
+  <input type="checkbox" (change)="onChangeUseSymbols()"/>
 </div>
   
 <div>
@@ -27,4 +27,7 @@
 <div>
   <label>Your Password is</label>
   <input [value]="getPassword()"/>
+  <div>
+    You see: <div>{{ password }}</div>
+  </div>
 </div>

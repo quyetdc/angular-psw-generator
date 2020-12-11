@@ -21,7 +21,12 @@
 </div>
   
 <div>
-  <button (click)="onButtonClick()">Generate!</button>
+  <button 
+    [disabled]="!(passwordLength && (useLetters || useNumbers || useSymbols) )" 
+    (click)="onButtonClick()">
+    
+    Generate!
+  </button>
 </div>
 
 <div>
